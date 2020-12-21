@@ -4,8 +4,11 @@ import * as cdk from "@aws-cdk/core";
 import { SdkPipelineStack } from "../lib/sdk-pipeline-stack";
 import { SdkHostStack } from "../lib/sdk-host-stack";
 import { SdkDocsStack } from "../lib/sdk-docs-stack";
+import { getResourceName } from "../utils";
 
 const app = new cdk.App();
+
+const environment = "dev";
 
 // TODO: will need to dynamically change this for deployments
 const env = {
@@ -13,14 +16,14 @@ const env = {
   region: "us-east-1",
 };
 
-new SdkPipelineStack(app, "SdkPipelineStack", {
+new SdkPipelineStack(app, getResourceName("pipeline-stack", environment), {
   env: env,
 });
 
-new SdkHostStack(app, "SdkHostStack", {
+new SdkHostStack(app, getResourceName("host-stack", environment), {
   env: env,
 });
 
-new SdkDocsStack(app, "SdkDocsStack", {
+new SdkDocsStack(app, getResourceName("docs-stack", environment), {
   env: env,
 });

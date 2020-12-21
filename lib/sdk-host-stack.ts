@@ -16,7 +16,7 @@ export class SdkHostStack extends cdk.Stack {
     });
 
     // Deployment
-    const src = new s3Deploy.BucketDeployment(this, "SdkDeployCRA", {
+    const src = new s3Deploy.BucketDeployment(this, "SdkDeployment", {
       sources: [s3Deploy.Source.asset("public")],
       destinationBucket: websiteBucket,
     });
