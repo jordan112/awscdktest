@@ -1,8 +1,8 @@
 {
-  "name": "cdk4",
+  "name": "sdk-stack",
   "version": "0.1.0",
   "bin": {
-    "cdk4": "bin/cdk4.js"
+    "cdk4": "bin/sdk-stack.js"
   },
   "scripts": {
     "build": "tsc",
