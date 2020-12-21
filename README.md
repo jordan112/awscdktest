@@ -1,11 +1,14 @@
-# awscdktest
-just a test repo to test some ci cd with cdk
+# Welcome to your CDK TypeScript project!
 
+This is a blank project for TypeScript development with CDK.
 
-![AWS CodeBuild Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiRXY4OG5JZ2o2ODJsREFaSHdnUU12a1c5Y2h2UmxBSTZCOWVkTU1qb3U0ZEgvRXcrNW1kTmdwU3lrOFNWek83b08vY2w3WE5zeU9acDNQdG1LclpJVjVZPSIsIml2UGFyYW1ldGVyU3BlYyI6InByaWlLMGFBeXF2QjlOczQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-test this commit
-aasdfasd
-asdfasdf
-asdfasdf
-sdfasdfasd
+## Useful commands
+
+ * `npm run build`   compile typescript to js
+ * `npm run watch`   watch for changes and compile
+ * `npm run test`    perform the jest unit tests
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk synth`       emits the synthesized CloudFormation template
